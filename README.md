@@ -6,7 +6,7 @@ Msfundetect is a ruby script that undetects payloads and it can be used smoothly
 method
 ======
 Msfundetect is based in "hyperion" packer (by Ammann, 2012, http://nullsecurity.net/papers/nullsec-pe-crypter.pdf).
-Instead of using hyperion's original approach of bruteforcing an AES key in order to decrypt the payload, msfundetect bruteforces the entire payload using an optimized crc16, which generates a self unpacking shellcode containing the crc16 hashing function and the crc16 hashed payload.
+Instead of using hyperion's original approach of bruteforcing an AES key in order to decrypt the payload, msfundetect method consists in cracking the entire payload with crc16, which is done by creating a self unpacking shellcode constructed with the crc16 hashing function and the crc16 hashed payload.
 
 
 result
