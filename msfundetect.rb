@@ -31,7 +31,7 @@ int t(int i)
 	' + f + '
 	return x;
 }
-void s(){' + w(z.size) + z.unpack("v*").map{|i| w(eval(f))}.join + '}
+void s(){' + w(z.size) + z.unpack('v*').map{|i| w(eval(f))}.join + '}
 '
 
 m = Metasm::Shellcode.new(Metasm::Ia32.new)
