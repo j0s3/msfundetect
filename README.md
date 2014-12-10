@@ -17,8 +17,16 @@ It also has the option to make an executable, which is also undetectable.
 
 verification
 ============
-Msfundetect result can be verified in virustotal using 'vt' option: msfundetect -t vt
+Msfundetect result can be verified in virustotal (which takes some minutes) using 'vt' option: msfundetect -t vt
+
 
 usage
 =====
+./msfundetect <options>
+options:
+-t <format> Define display format: exe x raw r c rb py pl vt
+
+
+example
+=======
 msfpayload windows/exec cmd=calc r | msfencode -e x86/alphamixed bufferregister=eax -t raw | msfundetect -t x > j.exe
